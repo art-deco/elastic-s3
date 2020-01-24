@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch-oss:7.5.1
+FROM docker.elastic.co/elasticsearch/elasticsearch-oss:7.5.2
 
 ARG ACCESS_KEY
 ARG SECRET_KEY

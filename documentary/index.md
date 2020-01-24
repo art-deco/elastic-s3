@@ -3,22 +3,9 @@ Elastic OSS Image With S3 Plugin.
 
 By default, _ElasticSearch_ docker containers don't come with S3 plugin installed. This image fixes this by pulling the plugin and installing in. However, you will need to build it yourself (and possibly host on a private registry) as the credentials need to be embedded into config at start.
 
-```Dockerfile
-FROM docker.elastic.co/elasticsearch/elasticsearch-oss:7.5.2
+%EXAMPLE: Dockerfile, Dockerfile%
 
-ARG ACCESS_KEY
-ARG SECRET_KEY
-
-RUN bin/elasticsearch-plugin install --batch repository-s3
-RUN elasticsearch-keystore create
-
-RUN echo "$ACCESS_KEY"  | bin/elasticsearch-keystore add --stdin s3.client.default.access_key
-RUN echo "$SECRET_KEY"  | bin/elasticsearch-keystore add --stdin s3.client.default.secret_key
-```
-
-<p align="center"><a href="#table-of-contents">
-  <img src="/.documentary/section-breaks/0.svg?sanitize=true">
-</a></p>
+%~%
 
 ## How To Install
 

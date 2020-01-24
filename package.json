@@ -1,0 +1,14 @@
+{
+  "name": "elastic-s3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "doc": "doc -d -o README.md"
+  },
+  "repository": "git@github.com:art-deco/elastic-s3.git",
+  "author": "Anton <anton@adc.sh>",
+  "license": "MIT",
+  "devDependencies": {
+    "documentary": "^1.35.9"
+  }
+}
